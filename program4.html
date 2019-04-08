@@ -1,0 +1,79 @@
+<html>
+<body>
+    <h2>Program 4</h2>
+    <p id="browser"></p>
+    <script>
+      //Browser code
+      document.getElementById("browser").innerHTML =
+      "The full URL of this page is:<br>" + window.location.href;
+    </script>
+
+
+    <html>
+    <body>
+        <h2>Browser Controls</h2>
+        <script>
+          //Controls to go forward and backward
+          function goBack(){
+            window.history.back()
+          }
+          function goFwd(){
+            window.history.forward()
+          }
+          </script>
+
+          <button onclick="goBack()">Go Back</button>
+          <br>
+          <br>
+          <button onclick="goFwd()">Go Fwd</button>
+    </body>
+    </html>
+          <br>
+          <br>
+
+          <html>
+          <body>
+            <h2>Redirect</h2>
+            <input type="button" value="Load website" onclick="newPage()">
+            <script>
+              function newPage(){
+                //OPens new URL existing window
+                window.location.assign("https://www.yahoo.com");
+            }
+            </script>
+          </body>
+          </html>
+
+
+    <html>
+    <body>
+      <h2>Timing</h2>
+
+      <button onclick="setTimeout(funcStart,9000);">Run</button>
+
+      <script>
+        //Timer for an alert
+        function funcStart(){
+          alert('Bitcoin is on the rise again!!');
+        }
+        </script>
+        </body>
+        </html>
+
+      <html>
+      <body>
+        <h2>Cookies</h2>
+        <p>The cookieEnabled property returns truie if cookies are enabled:</p>
+        <p id="demo"></p>
+        <script>
+        document.getElementById("demo").innerHTML =
+        "navigator.cookieEnabled is " + navigator.cookieEnabled
+        </script>
+      </body>
+      </html>
+
+
+
+
+    </body>
+    </html>
